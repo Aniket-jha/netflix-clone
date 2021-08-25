@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap");
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/d9cb1eea-62ee-4ec1-9b90-8d98874b8867/c1a78ec0-a2a8-43ff-8118-d11f0da72d69/IN-en-20210817-popsignuptwoweeks-perspective_alpha_website_large.jpg)
+    center no-repeat;
+  background-size: fill;
+}
+.loginLogo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+.signinButton {
+  position: fixed;
+  right: 50px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.signinButton:hover {
+  background-color: white;
+  color: #e50914;
+}
+.loginGradient {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.loginBody {
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  padding: 18px 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.loginBody > h1 {
+  font-size: 3em;
+  font-family: Martel Sans;
+}
+.loginBody > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Martel Sans;
+  margin-bottom: 30px;
+}
+
+.loginBody > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: Martel Sans;
+  margin-bottom: 20px;
+}
+.Input > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startButton {
+  padding: 16.5px 20px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  border-radius: 0%;
+  cursor: pointer;
+  flex-grow: inherit;
+  border-left: rgb(10, 10, 10) solid 2px;
+}
+.Input > form > input {
+  padding: 10px;
+  outline-width: none;
+
+  height: 32px;
+  width: 30%;
+  max-width: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .loginBody {
+    top: 20%;
+  }
+  .loginBody > h1 {
+    font-size: 2em;
+    font-family: Martel Sans;
+  }
+  .loginBody > h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Martel Sans;
+    margin-bottom: 10px;
+  }
+
+  .loginBody > h3 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: Martel Sans;
+    margin-bottom: 20px;
+  }
+  .Input > form {
+    flex: 90% 10%;
+  }
+  .Input > form > input {
+    max-width: 100%;
+  }
+}
